@@ -14,8 +14,10 @@ defmodule APIBoss.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger, :cowboy, :plug, :poison],
-  ]
+    [
+      mod: { APIBoss, [] },
+      applications: [:logger, :cowboy, :plug, :poison],
+    ]
   end
 
   # Dependencies can be Hex packages:
